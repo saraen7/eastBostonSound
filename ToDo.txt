@@ -1,0 +1,37 @@
+East Boston Sound issues:
+
+
+Index:
+
+-nav: sticky the nav: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
+-footer: center the arrow and sticky the arrow and make the arrow gray
+-have hearing damage boxes overlap a little
+-under Decibal graph, have suggestions for other pages also available in the nav
+-background image repeat
+-make the graph using live data and change the colors based on the hearing damage boxes
+
+*Remember to dry and label code before creating a new page
+
+East Boston History (How did Eastie get so noisy?)
+-create
+
+Physiology (How hearing and hearing damage works)
+-create
+
+Data Visualization wowzers (More data visualization facts)
+-create + D3 the fuck out of this
+
+Weather and urban sound (How cloud cover works)
+-create + DarkSky API
+
+Flight Aware
+-create (probs just coming soon for now) + FlightAware API
+
+
+Helpful color site:
+http://www.color-hex.com/color/666666
+
+Sources: 
+http://dangerousdecibels.org/education/information-center/decibel-exposure-time-guidelines/
+
+
