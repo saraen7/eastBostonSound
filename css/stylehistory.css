@@ -74,15 +74,11 @@ body, html {
   height: 100%;
   display: block;
   position: relative;
+  background-color: #a3a3a3;
+  box-shadow: 10px 10px 5px #888888;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-/*
-#background {
-  background-image: url("../images/originalBackgroundClockwise.JPG");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center top;
-}*/
 
 /*Header and Nav Bar*/
 .hiddenNav {
@@ -158,82 +154,17 @@ nav {
 }
 /*end content*/
 
-/*Fact Boxes*/
-.hiddenFacts, .hiddenGraph, .hide {
-  display: none;
+section {
+  width: 100%;
 }
 
-.facts {
-  width: 25%;
-  border: 1px solid black;
-  margin-top: 20px;
-  background-color: #a3a3a3;
-  border-radius: 15px;
-  opacity: 0.5;
-  box-shadow: 10px 10px 5px #888888;
-}
-
-.facts:last-of-type {
-  margin-bottom: 20px;
-}
-
-.even {
-  position: relative;
-  left: 15%;
-}
-
-.odd {
-  position: relative;
-  left:60%;
-}
-
-.d100, .d90 {
-  border: 5px solid #ee4035;
-}
-
-.d80 {
-  border: 5px solid #f37736;
-}
-
-.d70 {
-  border: 5px solid #fdf498;
-}
-
-.d60, .d50 {
-  border: 5px solid #7bc043;
-}
-
-h3, p {
+img {
   padding-left: 10px;
-  padding-right: 10px;
-}
-/*end Fact Boxes*/
-
-/*Graph Section */
-h2 {
-  margin: auto;
+  padding-bottom: 10px;
 }
 
-.exploreNav {
-  display: inline;
-}
-/*end Graph Section*/
-
-/*possible Nav down arrow*/
-footer p {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.arrow {
-    color: #a3a3a3;
-    font-size: 4em;
-}
-
-.down {
-    transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
+p {
+  padding: 10px;
 }
 
 /*footer*/
