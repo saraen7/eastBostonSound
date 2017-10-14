@@ -48,9 +48,14 @@ Developer @GA in Boston, Mass
 body {
      color: #000;
      background-color: #a3a3a3;
+     background-image: url("../images/originalBackgroundClockwise.JPG");
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center top;
      font-size: 12px;
      line-height: 1.4;
      font-family: Helvetica, Arial, sans-serif;
+
 }
 
 
@@ -58,16 +63,26 @@ body {
 /* LAYOUT
 /*******************************************/
 
+body, html {
+  min-height: 100%;
+}
+
 /* Center the container */
 #container {
 	width: 960px;
 	margin: auto;
-  background-image: url("../images/originalBackgroundClockwise.JPG");
   height: 100%;
   display: block;
   position: relative;
-  background-size: contain;
 }
+
+/*
+#background {
+  background-image: url("../images/originalBackgroundClockwise.JPG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+}*/
 
 /*Header and Nav Bar*/
 .hiddenNav {
@@ -85,7 +100,7 @@ li:first-of-type {
 }
 
 header {
-  height: 500px;
+  height: 150px;
 }
 
 h1 {
@@ -94,6 +109,8 @@ h1 {
   padding: 50px;
   font-weight: bold;
   margin: 0;
+  font-size: 3em;
+  color: #333;
 }
 
 li a {
@@ -128,18 +145,31 @@ nav {
   right: 0;
   top: 0;
   float: right;
-  float: right;
   margin: 50px;
   position: relative;
 }
 /*end Header and Nav Bar*/
 
+/*all content*/
+.content {
+  min-height: 100%;
+  margin-bottom: -50px;
+  clear: both;
+}
+/*end content*/
+
 /*Fact Boxes*/
+.hiddenFacts, .hiddenGraph, .hide {
+  display: none;
+}
+
 .facts {
   width: 25%;
   border: 1px solid black;
   margin-top: 20px;
   background-color: #a3a3a3;
+  border-radius: 15px;
+  opacity: 0.5;
 }
 
 .facts:last-of-type {
@@ -178,13 +208,41 @@ h3, p {
 }
 /*end Fact Boxes*/
 
+/*Graph Section */
+h2 {
+  margin: auto;
+}
+
+.exploreNav {
+  display: inline;
+}
+/*end Graph Section*/
+
 /*possible Nav down arrow*/
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #f00;
+footer p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.arrow {
+    color: #a3a3a3;
+    font-size: 4em;
+}
+
+.down {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+/*footer*/
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  height: 50px;
+  overflow: hidden;
 }
 /******************************************
 /* ADDITIONAL STYLES

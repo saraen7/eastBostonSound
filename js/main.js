@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
+
   //h1 loads line by line on page load
   var str = "Sounds of East Boston";
-  var spans = '<span>' + str.split(/\s+/).join(' </span><br><span>') + '</span>';
+  var spans = '<span>' + str.split(/\s+/).join(' </span><span>') + '</span>';
   $(spans).hide().appendTo('h1').each(function(i) {
     $(this).delay(125 * i).fadeIn();
   }); //end h1 loads line by line on page load
@@ -17,7 +18,14 @@ $(document).ready(function(){
     }
   }); //end navigation menu revealed on click
 
-  //navigation items appear one at a time
+//if the user clicks on the arrow, show facts
+  $("footer").on("click",function(){
+    $("div").each(function(i){
+      $(this).delay(150 * i).fadeIn().css('opacity','1.0');
+    });
+    $("footer > p").addClass("hide");
+
+  });
 
 
 });

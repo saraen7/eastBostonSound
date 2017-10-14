@@ -1,14 +1,8 @@
 East Boston Sound issues:
 
-
 Index:
-
--nav: sticky the nav: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
--footer: center the arrow and sticky the arrow and make the arrow gray
--have hearing damage boxes overlap a little
--under Decibal graph, have suggestions for other pages also available in the nav
--background image repeat
--make the graph using live data and change the colors based on the hearing damage boxes
+-style h2s around Decibel graph
+-under Decibel graph, have suggestions for other pages also available in the nav
 
 *Remember to dry and label code before creating a new page
 
@@ -26,6 +20,12 @@ Weather and urban sound (How cloud cover works)
 
 Flight Aware
 -create (probs just coming soon for now) + FlightAware API
+
+Index (round two):
+- Make the on-click arrow wider
+- make the graph using live data and change the colors based on the hearing damage boxes
+- David's idea about having the h1 in one line, fade in along with the hamburger menu
+- page: add a scroll event for noise facts to appear
 
 
 Helpful color site:
