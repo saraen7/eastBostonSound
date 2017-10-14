@@ -27,5 +27,8 @@ $(document).ready(function(){
 
   });
 
+d3.select(".d3Test")
+  .append("p")
+  .text("Load text with d3.js! today");
 
 });

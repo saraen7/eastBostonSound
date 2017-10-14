@@ -1,31 +1,37 @@
 East Boston Sound issues:
 
-Index:
--style h2s around Decibel graph
--under Decibel graph, have suggestions for other pages also available in the nav
-
 *Remember to dry and label code before creating a new page
-
-East Boston History (How did Eastie get so noisy?)
--create
-
-Physiology (How hearing and hearing damage works)
--create
 
 Data Visualization wowzers (More data visualization facts)
 -create + D3 the fuck out of this
 
+
+Index (round two):
+-style h2s around Decibel graph
+-under Decibel graph, have suggestions for other pages also available in the nav
+- Make the on-click arrow wider
+- make the graph using live data and change the colors based on the hearing damage boxes
+- David's idea about having the h1 in one line, fade in along with the hamburger menu
+- page: add a scroll event for noise facts to appear
+-Update the Decibel graph to include a straight horizontal line at 85 decibels
+-Add a picture to the tab for each page
+
+History (round two):
+- Add a subtitle "A History" with fade in or (How did Eastie get so noisy?)
+- Add more maps
+- Add sources
+
+History (round three):
+- Illustrate the runway pattern noise affect on neighborhoods
+- Possibly create a GIF of runways and noise on neighborhoods
+- Write my own text instead of copyright violation
+
+Pie in the Sky pages:
 Weather and urban sound (How cloud cover works)
 -create + DarkSky API
 
 Flight Aware
 -create (probs just coming soon for now) + FlightAware API
-
-Index (round two):
-- Make the on-click arrow wider
-- make the graph using live data and change the colors based on the hearing damage boxes
-- David's idea about having the h1 in one line, fade in along with the hamburger menu
-- page: add a scroll event for noise facts to appear
 
 
 Helpful color site:
@@ -33,5 +39,7 @@ http://www.color-hex.com/color/666666
 
 Sources: 
 http://dangerousdecibels.org/education/information-center/decibel-exposure-time-guidelines/
+https://www.cityofboston.gov/images_documents/East_Boston_brochure_tcm3-19117.pdf
+http://www.universalhub.com/2015/logan-airport-flight-path-and-coronary-heart
 
 
