@@ -248,17 +248,27 @@ footer {
 
 /*for the graph*/
 path {
-    stroke: steelblue;
-    stroke-width: 2;
+    stroke: darkred;
+    stroke-width: 0.5;
     fill: none;
 }
 
 .axis path,
 .axis line {
     fill: none;
-    stroke: grey;
-    stroke-width: 1;
-    shape-rendering: crispEdges;
+    stroke: none;
+    stroke-width: 0.5;
+    shape-rendering: optimizeForSpeed;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: orange;
+  stroke: none;
 }
 /*end graph*/
 /******************************************
