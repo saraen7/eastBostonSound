@@ -245,6 +245,22 @@ footer {
   height: 50px;
   overflow: hidden;
 }
+
+/*for the graph*/
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+/*end graph*/
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
