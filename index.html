@@ -5,12 +5,13 @@
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
 
-		<title>East Boston Sound</title>
+		<title>Eastie Noise Levels</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
 	</head>
 	<body>
 		<div id="background">
@@ -24,7 +25,7 @@
 						<div></div>
 					</div>
 					<ul class="hiddenNav">
-						<li><a href="">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="history.html">History</a></li>
 						<li><a href="noiseLevels.html">Noise Levels</a></li>
 						<li><a href="meteorology.html">Meteorology</a></li>
@@ -32,50 +33,12 @@
 					</ul>
 				</nav>
 			</header>
-			<section class="content">
-			<section class="">
-				<div class="d100 facts even hide">
-					<h3>At 100 Decibels</h3>
-					<p>Damage to the human ear is possible after 15 minutes of sustained sound at 100 dB.</p>
-					<p>Everyday examples: Chainsaws, rock concerts, and leaf blowers</p>
-				</div>
-				<div class="d90 facts odd hide">
-					<h3>At 90 Decibels</h3>
-					<p>Damage to the human ear is possible after 2 hours of sustained sound at 90 dB.</p>
-					<p>Everyday examples: Hair dryer, gas mower</p>
-				</div>
-				<div class="d80 facts even hide">
-					<h3>At 80 Decibels</h3>
-					<p><em>Hearing damage starts to occur at 85 decibels</em></p>
-					<p>Damage to the human ear is possible after 8 hours of sustained sound at 80 dB.</p>
-					<p>Everyday examples: city traffic.</p>
-				</div>
-				<div class="d70 facts odd hide">
-					<h3>At 70 Decibels</h3>
-					<p>Everyday examples: washing machine</p>
-				</div>
-				<div class="d60 facts even hide">
-					<h3>At 60 Decibels</h3>
-					<p>Everyday examples: typical conversation</p>
-				</div>
-				<div class="d50 facts odd hide">
-					<h3>At 50 Decibels</h3>
-					<p>Everyday examples: rainfall</p>
-				</div>
+			<section class="d3Test">
 			</section>
-			<section class="graph">
-				<div class="hide">
-				<h2>East Boston is one of the loudest neighborhoods in Boston <sup><a href="http://boston.noiseandthecity.org/report-card-east-boston" target="_blank">1</a></sup></h2>
-				<img src="images/decibalPlaceholder.png" width="100%">
-				<h2>What makes Eastie so loud?</h2>
-				<h4>Explore here:</h4>
-
-			</div>
+			<section class="infoBox">
+			
 			</section>
-
-		</section>
 			<footer>
-				<p class="down arrow">^</p>
 			</footer>
 		</div><!-- #container -->
 	</div><!--#background-->

@@ -1,5 +1,33 @@
 $(document).ready(function(){
 
+  //facts and examples arrays
+  var facts = [
+     "At 100 decibels, damage to the human ear is possible after 15 minutes.",
+     "At 90 decibels, damage to the human ear is possible after two hours.",
+     "At 80 decibels, damage to the human ear is possible after eight hours.",
+     "70 decibels",
+     "60 decibels",
+     "50 decibels"
+   ]
+   var examples = [
+     "Everyday examples: Chainsaws, rock concerts, and leaf blowers",
+     "Everyday examples: Hair dryer, gas mower",
+     "Everyday examples: city traffic",
+     "Everyday examples: washing machine",
+     "Everyday examples: typical conversation",
+     "Everyday examples: rainfall"
+   ]
+
+   function removeClasses() {
+     $("section:last-of-type").removeClass("d100").removeClass("d90").removeClass("d80").removeClass("d70").removeClass("d60").removeClass("d50");
+   }
+
+   function removeParagraphs() {
+     $("section:last-of-type").children("p").remove()
+   }
+
+//load 100 dba facts on initial load - eventually add a delay
+$(".infoBox").addClass("d100").append("<p>" + facts[0] + "<br>" + examples[0] + "</p>");
 
   //h1 loads line by line on page load
   var str = "Sounds of East Boston";
@@ -95,14 +123,6 @@ $(document).ready(function(){
           .ease("linear")
           .attr("stroke-dashoffset", 0);
 
-          svg.on("click", function(){
-            path
-            .transition()
-            .duration(2000)
-            .ease("linear")
-            .attr("stroke-dashoffset", totalLength);
-    })
-
       // Add the X Axis
       svg.append("g")
           .attr("class", "x axis")
@@ -114,6 +134,7 @@ $(document).ready(function(){
           .attr("class", "y axis")
           .call(yAxis);
 
+      //http://bl.ocks.org/duopixel/4063326
       var focus = svg.append("g")
          .attr("class", "focus")
          .style("display", "none");
@@ -141,9 +162,40 @@ $(document).ready(function(){
            d = x0 - d0.date > d1.date - x0 ? d1 : d0;
        focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
        focus.select("text").text(d.close);
+       updateFacts();
 
+       function updateFacts() {
+         removeClasses();
+         removeParagraphs();
+         if((d.close) > 99){
+           $(".infoBox").addClass("d100").append("<p>" + facts[0] + "<br>" + examples[0] + "</p>");
+         } else if ((d.close) > 89){
+           $(".infoBox").addClass("d90").append("<p>" + facts[1] + "<br>" + examples[1] + "</p>");
+         } else if ((d.close) > 79){
+           $(".infoBox").addClass("d80").append("<p>" + facts[2] + "<br>" + examples[2] + "</p>");
+         } else if ((d.close) > 69){
+           $(".infoBox").addClass("d70").append("<p>" + facts[3] + "<br>" + examples[3] + "</p>");
+         } else if ((d.close) > 59){
+           $(".infoBox").addClass("d60").append("<p>" + facts[4] + "<br>" + examples[4] + "</p>");
+         } else if ((d.close) < 60){
+           $(".infoBox").addClass("d50").append("<p>" + facts[5] + "<br>" + examples[5] + "</p>");
+         } else {
+           console.log("it works so far");
+         }
+       }
 
      }
+
+     $("svg").mouseout(function(){
+       removeClasses();
+       removeParagraphs();
+       $(".infoBox").removeClass("d50").removeClass("d60").addClass("d100").append("<p>" + facts[0] + "<br>" + examples[0] + "</p>");
+     });
+
+
+
+
+
 
   });
 
