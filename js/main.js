@@ -81,9 +81,27 @@ $(document).ready(function(){
 
       // Add the valueline path.
 
-      svg.append("path")
+      var path = svg.append("path")
           .attr("class", "line")
           .attr("d", valueline(data));
+
+      var totalLength = path.node().getTotalLength();
+
+      path
+        .attr("stroke-dasharray", totalLength + " " + totalLength)
+        .attr("stroke-dashoffset", totalLength)
+        .transition()
+          .duration(2000)
+          .ease("linear")
+          .attr("stroke-dashoffset", 0);
+
+          svg.on("click", function(){
+            path
+            .transition()
+            .duration(2000)
+            .ease("linear")
+            .attr("stroke-dashoffset", totalLength);
+    })
 
       // Add the X Axis
       svg.append("g")
@@ -123,6 +141,8 @@ $(document).ready(function(){
            d = x0 - d0.date > d1.date - x0 ? d1 : d0;
        focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
        focus.select("text").text(d.close);
+
+
      }
 
   });
