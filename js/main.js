@@ -94,9 +94,9 @@ $(".infoBox").addClass("d100").append("<p>" + facts[0] + "<br>" + examples[0] + 
 
   // Get the data
 
-  //short data: https://goo.gl/A7X3xN
-  //all data:  https://goo.gl/oSKFt9
-  d3.csv("https://goo.gl/oSKFt9", function(error, data) {
+  //short data: https://goo.gl/A7X3xN OR http://davidjkelley.net/READINGS-no-id2.csv
+  //all data:  https://goo.gl/oSKFt9 OR http://davidjkelley.net/READINGS-no-id.csv
+  d3.csv("http://davidjkelley.net/READINGS-no-id.csv", function(error, data) {
       data.forEach(function(d) {
           d.index = parseFloat(d.index);
           d.close = parseFloat(d.close);
