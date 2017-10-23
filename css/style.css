@@ -226,13 +226,16 @@ p:first-of-type{
   margin-top: 20px;
 }
 
-p {
+.d3Test p, .infoBox p {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-
   color: #333;
   font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
 }
 
 .d100, .d90 {

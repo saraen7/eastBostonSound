@@ -93,7 +93,10 @@ $(".infoBox").addClass("d100").append("<p>" + facts[0] + "<br>" + examples[0] + 
                 "translate(" + margin.left + "," + margin.top + ")");
 
   // Get the data
-  d3.csv("http://davidjkelley.net/READINGS-no-id.csv", function(error, data) {
+
+  //short data: https://goo.gl/A7X3xN
+  //all data:  https://goo.gl/oSKFt9
+  d3.csv("https://goo.gl/oSKFt9", function(error, data) {
       data.forEach(function(d) {
           d.index = parseFloat(d.index);
           d.close = parseFloat(d.close);
